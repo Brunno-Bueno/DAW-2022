@@ -1,5 +1,10 @@
-import { Header } from "./components/Header";
-import { Footer } from "./components/Footer";
+import { Route, Routes } from 'react-router-dom';
+import { Footer } from './components/Footer';
+import { Header } from './components/Header';
+import { HomePage } from './pages/Home';
+
+import './assets/css/normalize.css';
+import './assets/css/global.css';
 
 function App() {
 
@@ -7,15 +12,17 @@ function App() {
         <div className="App">
 
             <Header />
-        <main>
-            <Routes>
-                <Route path="*" element={<HomePage />} />
-            </Routes>
-        </main>
+
+            <main>
+                <Routes>
+                    <Route path="*" element={<HomePage />} />
+                </Routes>
+            </main>
 
             <Footer />
-        </ div>
+
+        </div>
     )
 }
 
-            export default App
+export default App
