@@ -36,6 +36,8 @@ export function SectionBanner() {
 
     const { imoveis } = useImovel();
 
+    const{filter, setFilter} = useState({});
+
     function handleFilter() {
         
     }
